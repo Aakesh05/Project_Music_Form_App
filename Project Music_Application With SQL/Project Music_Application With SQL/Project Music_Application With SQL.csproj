@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{536940DE-746D-44D7-B5B2-997F5149F588}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Music_Application_With_SQL</RootNamespace>
+    <AssemblyName>Project Music_Application With SQL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forgot Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot Password.Designer.cs">
+      <DependentUpon>Forgot Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="Log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in.Designer.cs">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Make Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make Password.Designer.cs">
+      <DependentUpon>Make Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Music Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Music Menu.Designer.cs">
+      <DependentUpon>Music Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Music Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Music Player.Designer.cs">
+      <DependentUpon>Music Player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs" />
+    <EmbeddedResource Include="Forgot Password.resx">
+      <DependentUpon>Forgot Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in.resx">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Make Password.resx">
+      <DependentUpon>Make Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Menu.resx">
+      <DependentUpon>Music Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Music Player.resx">
+      <DependentUpon>Music Player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Polo G Gang Gang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunset Sillouhette.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink Overlay shapes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rainbow Spiral.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy LED Skull.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silloehettes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Headphones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crysis 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dude that Rap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chill.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
